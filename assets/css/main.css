@@ -1,0 +1,49 @@
+#color_navegador
+{
+
+  background: #00F260;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+
+
+
+
+
+#patrocinador
+{
+  background: #00c3ff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffff1c, #00c3ff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffff1c, #00c3ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding: 10px 0px 10px 0;
+   
+}
+
+
+
+.alert-error {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+
+
+
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }

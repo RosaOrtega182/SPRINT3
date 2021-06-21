@@ -1,0 +1,90 @@
+<%- include ('parts/header')%>
+     
+
+<div class="container-fluid  mt-3">
+  
+  <div class="row">
+    <div class="col-2 mt-3" >
+      <div class= "container">
+        <h4>Mi perfil</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="/profile"><i class="fas fa-id-badge"></i>&nbspVer Teclers</a>
+            </li>
+            
+          </ul>
+      </div>
+    </div>
+
+
+
+
+
+
+
+        <div class="col-9 mt-3">
+          <h1 >Solicitudes de amistad</h1>
+          <%  if (cantidad>=1){%>
+            <% for(let user of instanceFriendRequest){%>
+          <div class="row mt-3">
+            <div class="container"> 
+              <div class="row"> 
+                <div class="col text-center">
+                    <img class="spi text-center" src="/img/<%= user.usuario.imagen%>" width="200px" height="200px">
+                </div>
+                <div class="col ">
+                  <div class="container mt-3">
+                    <h2 class="page-header text-center"> <%= user.usuario.nombre%> <%= user.usuario.apellido%></h2>
+                    <br>
+                    
+                    <div class="row">
+                      <div class= "col-6">
+                        <a href="/friends/accept/<%=user.usuario.id %>" class="btn-item btn btn-info text-white ">Aceptar solicitud de amistad</a>
+
+                      </div>
+                      <div class= "col-6" >
+                        <a href="/friends/reject/<%=user.usuario.id %>" class="btn-item btn btn-danger  align-self-center">Rechazar soliciud de amistad</a>
+                        
+                      </div>
+                      </div>
+                  </div>
+                </div>
+              
+                
+                
+              </div> 
+            </div>  
+          </div>
+          <% } %>
+          <% } else {%>
+            <h3 class="text-center">No hay solicitudes de amistad</h3>
+            <% }%>
+    
+             
+        </div>
+
+
+        
+    
+
+
+
+  </div>
+</div>
+  
+
+
+
+
+
+
+
+
+
+
+<!-- BOOTSTRAP 5 JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

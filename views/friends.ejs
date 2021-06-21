@@ -1,0 +1,87 @@
+<%- include ('parts/header')%>
+     
+
+<div class="container-fluid  mt-3">
+  
+  <div class="row">
+    <div class="col-2 mt-3" >
+      <div class= "container">
+        <h4>Mi perfil</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="/profile"><i class="fas fa-id-badge"></i>&nbspVer Teclers</a>
+            </li>
+            
+          </ul>
+      </div>
+    </div>
+
+
+
+
+
+
+
+        <div class="col-9 mt-3">
+          <h1 >Amigos</h1>
+          <%  if (cantidad>=1){%>
+            <% for(let friends of instanceFriends){%>
+          <div class="row mt-3">
+            <div class="container"> 
+              <div class="row"> 
+                <div class="col text-center">
+                    <img class="spi text-center" src="/img/<%= friends.usuario.imagen%>" width="200px" height="200px">
+                </div>
+                <div class="col ">
+                  <div class="container mt-3">
+                    <h2 class="page-header text-center"> <%= friends.usuario.nombre%> <%= friends.usuario.apellido%></h2>
+                    <br>
+                 
+                    
+            
+                  
+                        <a href="/friends/delete/<%=friends.usuario.id %>"  style="width: 100%"class="btn-item btn btn-danger">Dejar de ser amigos</a>
+                        
+                     
+                      
+                  </div>
+                </div>
+              
+                
+                
+              </div> 
+            </div>  
+          </div>
+          <% } %>
+          <% } else {%>
+            <h3 class="text-center">No tienes amigos <i class="fas fa-heart-broken"></i></h3>
+            <% }%>
+    
+             
+        </div>
+
+
+        
+    
+
+
+
+  </div>
+</div>
+  
+
+
+
+
+
+
+
+
+
+
+<!-- BOOTSTRAP 5 JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

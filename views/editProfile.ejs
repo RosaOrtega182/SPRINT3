@@ -1,0 +1,91 @@
+<%- include ('./parts/header')%>
+
+
+
+
+
+<div class="container mt-3">
+  <h1 class="text-center">Editar profile</h1>
+<br>
+
+    <form method="POST" class= "row -4 mt-3" action="/profile/editProfile/<%=id%>">
+
+        <div class="col-12">
+        <div class="form-group mt-3">
+            <label for="" class="fw-bold">Acerca de mi</label>
+            <textarea class="form-control" name="acerca_de_mi"  rows="3" placeholder="Acerca de Mi"><%= acerca_de_mi %> </textarea>
+                    
+        </div>
+        </div>
+
+
+        <div class="col-4">
+            <div class="form-group mt-3">
+                <label for="" class="fw-bold">País</label>
+                <input type="text" class="form-control" name="pais" value="<%=pais%>" placeholder="País">
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group mt-3">
+                <label for="" class="fw-bold">Ciudad</label>
+                <input type="text" class="form-control" name="ciudad" value="<%=ciudad%>" placeholder="Ciudad">
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="form-group mt-3">
+                <label for="" class="fw-bold">Edad</label>
+                <input type="text" class="form-control" name="edad" value="<%=edad%>" placeholder="Edad">
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-group mt-3">
+                <label for="" class="fw-bold">Estudios</label>
+                <textarea class="form-control" name="estudios"  rows="3" placeholder="Estudios"><%= estudios %> </textarea>
+                        
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="form-group mt-3">
+                <label for="" class="fw-bold">Idiomas</label>
+                <input type="text" class="form-control" name="idiomas" value="<%=idiomas%>" placeholder="Idiomas">
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group mt-3">
+                <label for="" class="fw-bold">LinkedIn</label>
+                <input type="text" class="form-control" name="linkedin" value="<%=linkedin%>" placeholder="LinkedIn">
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="form-group mt-3">
+                <label for="" class="fw-bold">Hobbies</label>
+                <input type="text" class="form-control" name="hobbies" value="<%=hobbies%>" placeholder="Hobbies">
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-group mt-3">
+                <label for="" class="fw-bold">Conocimientos extras</label>
+                <textarea class="form-control" name="conocimientos_extras"  rows="3" placeholder="Conocimientos extras"><%= conocimientos_extras%> </textarea>
+                        
+            </div>
+        </div>
+
+        
+       
+        <button type="submit" class="btn btn-primary mt-3">Editar</button>
+      </form>
+  </div>
+
+
+
+
+
+<!-- BOOTSTRAP 5 JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

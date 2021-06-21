@@ -1,0 +1,353 @@
+<%- include ('../parts/header')%>
+
+
+
+
+
+
+<div class="container mt-3">
+    <h1 class="text-center">Editar skills</h1>
+<a href="/admin/skills" class="btn btn-primary">Regresar a ver todos los usuarios</a>
+<br>
+
+    <form class= "row -4 mt-3" method="POST" action="/admin/skills/editProfile/<%=id%>">
+
+        <div class="col-6">
+          <h2>Conocimientos</h2>  
+        <div class="form-group mb-3">
+            <label for="" class="form-label fw-bold">Base de datos</label>
+                <select name="base_datos" class="form-control">
+                    <% teclavalores.forEach(function(valor){ %>
+                        <option value="<%= valor %>"
+                        <% if (valor == base_datos) { %>
+                        selected="selected"
+                        <% } %>        
+                        ><%= valor %></option>
+                    <% }); %>
+                </select>
+        </div>
+        <div class="form-group mb-3">
+            <label for="" class="form-label fw-bold">APIS</label>
+                <select name="apis" class="form-control">
+                    <% teclavalores.forEach(function(valor){ %>
+                        <option value="<%= valor %>"
+                        <% if (valor == apis) { %>
+                        selected="selected"
+                        <% } %>        
+                        ><%= valor %></option>
+                    <% }); %>
+                </select>
+        </div>
+        <div class="form-group mb-3">
+            <label for="" class="form-label fw-bold">Testing</label>
+                <select name="testing" class="form-control">
+                    <% teclavalores.forEach(function(valor){ %>
+                        <option value="<%= valor %>"
+                        <% if (valor == testing) { %>
+                        selected="selected"
+                        <% } %>        
+                        ><%= valor %></option>
+                    <% }); %>
+                </select>
+        </div>
+        <div class="form-group mb-3">
+            <label for="" class="form-label fw-bold">Seguridad</label>
+                <select name="seguridad" class="form-control">
+                    <% teclavalores.forEach(function(valor){ %>
+                        <option value="<%= valor %>"
+                        <% if (valor == seguridad) { %>
+                        selected="selected"
+                        <% } %>        
+                        ><%= valor %></option>
+                    <% }); %>
+                </select>
+        </div>
+        <div class="form-group mb-3">
+            <label for="" class="form-label fw-bold">Teoria de Objetos</label>
+                <select name="teoria_objetos" class="form-control">
+                    <% teclavalores.forEach(function(valor){ %>
+                        <option value="<%= valor %>"
+                        <% if (valor == teoria_objetos) { %>
+                        selected="selected"
+                        <% } %>        
+                        ><%= valor %></option>
+                    <% }); %>
+                </select>
+        </div>
+        
+        </div>
+
+
+
+        <div class="col-6">
+            <h2>Tecnologías</h2>  
+          <div class="form-group mb-3">
+              <label for="" class="form-label fw-bold">Nodejs</label>
+                  <select name="nodejs" class="form-control">
+                      <% teclavalores.forEach(function(valor){ %>
+                          <option value="<%= valor %>"
+                          <% if (valor == nodejs) { %>
+                          selected="selected"
+                          <% } %>        
+                          ><%= valor %></option>
+                      <% }); %>
+                  </select>
+          </div>
+          <div class="form-group mb-3">
+              <label for="" class="form-label fw-bold">Frontend</label>
+                  <select name="frontend" class="form-control">
+                      <% teclavalores.forEach(function(valor){ %>
+                          <option value="<%= valor %>"
+                          <% if (valor == frontend) { %>
+                          selected="selected"
+                          <% } %>        
+                          ><%= valor %></option>
+                      <% }); %>
+                  </select>
+          </div>
+          <div class="form-group mb-3">
+              <label for="" class="form-label fw-bold">Swagger</label>
+                  <select name="swagger" class="form-control">
+                      <% teclavalores.forEach(function(valor){ %>
+                          <option value="<%= valor %>"
+                          <% if (valor == swagger) { %>
+                          selected="selected"
+                          <% } %>        
+                          ><%= valor %></option>
+                      <% }); %>
+                  </select>
+          </div>
+          <div class="form-group mb-3">
+              <label for="" class="form-label fw-bold">Javascript</label>
+                  <select name="javascript" class="form-control">
+                      <% teclavalores.forEach(function(valor){ %>
+                          <option value="<%= valor %>"
+                          <% if (valor == javascript) { %>
+                          selected="selected"
+                          <% } %>        
+                          ><%= valor %></option>
+                      <% }); %>
+                  </select>
+          </div>
+         
+          </div>
+
+          <div class="col-6">
+            <h2>Desempeño</h2>  
+          <div class="form-group mb-3">
+              <label for="" class="form-label fw-bold">Calidad del código</label>
+                  <select name="calidad_codigo" class="form-control">
+                      <% teclavalores.forEach(function(valor){ %>
+                          <option value="<%= valor %>"
+                          <% if (valor == calidad_codigo) { %>
+                          selected="selected"
+                          <% } %>        
+                          ><%= valor %></option>
+                      <% }); %>
+                  </select>
+          </div>
+          <div class="form-group mb-3">
+              <label for="" class="form-label fw-bold">Velocidad de entrega</label>
+                  <select name="velocidad_entrega" class="form-control">
+                      <% teclavalores.forEach(function(valor){ %>
+                          <option value="<%= valor %>"
+                          <% if (valor == velocidad_entrega) { %>
+                          selected="selected"
+                          <% } %>        
+                          ><%= valor %></option>
+                      <% }); %>
+                  </select>
+          </div>
+          <div class="form-group mb-3">
+              <label for="" class="form-label fw-bold">Performance del código</label>
+                  <select name="performance_codigo" class="form-control">
+                      <% teclavalores.forEach(function(valor){ %>
+                          <option value="<%= valor %>"
+                          <% if (valor == performance_codigo) { %>
+                          selected="selected"
+                          <% } %>        
+                          ><%= valor %></option>
+                      <% }); %>
+                  </select>
+          </div>
+         
+         
+          </div>  
+
+       
+
+          <div class="col-6">
+            <h2>Habilidades blandas</h2>  
+          <div class="form-group mb-3">
+              <label for="" class="form-label fw-bold">Enfocado</label>
+                  <select name="enfocado" class="form-control">
+                      <% teclavalores.forEach(function(valor){ %>
+                          <option value="<%= valor %>"
+                          <% if (valor == enfocado) { %>
+                          selected="selected"
+                          <% } %>        
+                          ><%= valor %></option>
+                      <% }); %>
+                  </select>
+          </div>
+          <div class="form-group mb-3">
+              <label for="" class="form-label fw-bold">Trabajo en equipo</label>
+                  <select name="trabajo_equipo" class="form-control">
+                      <% teclavalores.forEach(function(valor){ %>
+                          <option value="<%= valor %>"
+                          <% if (valor == trabajo_equipo) { %>
+                          selected="selected"
+                          <% } %>        
+                          ><%= valor %></option>
+                      <% }); %>
+                  </select>
+          </div>
+          <div class="form-group mb-3">
+              <label for="" class="form-label fw-bold">Comprometido</label>
+                  <select name="comprometido" class="form-control">
+                      <% teclavalores.forEach(function(valor){ %>
+                          <option value="<%= valor %>"
+                          <% if (valor == comprometido) { %>
+                          selected="selected"
+                          <% } %>        
+                          ><%= valor %></option>
+                      <% }); %>
+                  </select>
+          </div>
+          <div class="form-group mb-3">
+              <label for="" class="form-label fw-bold">Comunicación</label>
+                  <select name="comunicacion" class="form-control">
+                      <% teclavalores.forEach(function(valor){ %>
+                          <option value="<%= valor %>"
+                          <% if (valor == comunicacion) { %>
+                          selected="selected"
+                          <% } %>        
+                          ><%= valor %></option>
+                      <% }); %>
+                  </select>
+          </div>
+          <div class="form-group mb-3">
+              <label for="" class="form-label fw-bold">Capacidad de aprendizaje</label>
+                  <select name="capacidad_aprendizaje" class="form-control">
+                      <% teclavalores.forEach(function(valor){ %>
+                          <option value="<%= valor %>"
+                          <% if (valor == capacidad_aprendizaje) { %>
+                          selected="selected"
+                          <% } %>        
+                          ><%= valor %></option>
+                      <% }); %>
+                  </select>
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="" class="form-label fw-bold">Resolución de problemas</label>
+                <select name="resolucion_problema" class="form-control">
+                    <% teclavalores.forEach(function(valor){ %>
+                        <option value="<%= valor %>"
+                        <% if (valor == resolucion_problema) { %>
+                        selected="selected"
+                        <% } %>        
+                        ><%= valor %></option>
+                    <% }); %>
+                </select>
+        </div>
+
+          </div>
+
+
+          <div class="col-6">
+            <h2>Entornos profesionales</h2>  
+          <div class="form-group mb-3">
+              <label for="" class="form-label fw-bold">Versionado_Git</label>
+                  <select name="versionado_git" class="form-control">
+                      <% teclavalores.forEach(function(valor){ %>
+                          <option value="<%= valor %>"
+                          <% if (valor == versionado_git) { %>
+                          selected="selected"
+                          <% } %>        
+                          ><%= valor %></option>
+                      <% }); %>
+                  </select>
+          </div>
+          <div class="form-group mb-3">
+              <label for="" class="form-label fw-bold">Trello</label>
+                  <select name="trello" class="form-control">
+                      <% teclavalores.forEach(function(valor){ %>
+                          <option value="<%= valor %>"
+                          <% if (valor == trello) { %>
+                          selected="selected"
+                          <% } %>        
+                          ><%= valor %></option>
+                      <% }); %>
+                  </select>
+          </div>
+          <div class="form-group mb-3">
+              <label for="" class="form-label fw-bold">Slack</label>
+                  <select name="slack" class="form-control">
+                      <% teclavalores.forEach(function(valor){ %>
+                          <option value="<%= valor %>"
+                          <% if (valor == slack) { %>
+                          selected="selected"
+                          <% } %>        
+                          ><%= valor %></option>
+                      <% }); %>
+                  </select>
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="" class="form-label fw-bold">Metodologías agiles</label>
+                <select name=" metodologias_agiles" class="form-control">
+                    <% teclavalores.forEach(function(valor){ %>
+                        <option value="<%=  metodologias_agiles %>"
+                        <% if (valor == slack) { %>
+                        selected="selected"
+                        <% } %>        
+                        ><%= valor %></option>
+                    <% }); %>
+                </select>
+        </div>
+         
+         
+          </div>  
+       
+
+       
+
+          <div class="col-6">
+          </div>
+        
+
+        
+        
+
+
+        <input type="hidden" name="id" value="<%= id%>">
+
+
+
+
+
+        <div class="col-1">
+        <button type="submit" class="btn btn-primary mt-3">Editar</button>
+       </div>
+      </form>
+  </div>
+
+        
+  
+
+
+
+
+
+
+
+
+
+
+<!-- BOOTSTRAP 5 JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

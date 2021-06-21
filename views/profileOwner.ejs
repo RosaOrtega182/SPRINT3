@@ -1,0 +1,436 @@
+<%- include ('parts/header')%>
+     
+
+<div class="container-fluid  mt-3">
+  <div class="row">
+    <div class="col-2" >
+      <div class= "container">
+        <h4>Mi perfil</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="/profile"><i class="fas fa-id-badge"></i>&nbspVer Teclers</a>
+            </li>
+            
+          </ul>
+      </div>
+    </div>
+
+
+
+
+
+
+
+        <div class="col-10">
+          <div class="row">
+            <div class="container"> 
+              <div class="row"> 
+                <div class="col text-center">
+                    <img class="spi text-center mt-3" src="/img/<%= instanceUser.imagen%>" style="width: 60%">
+                </div>
+                <div class="col ">
+                  <div class="container mt-3">
+                    <h2 class="page-header text-center"> <%= instanceUser.nombre%> <%= instanceUser.apellido%></h2>
+                    <br>
+                   <h4>Acerca de mí</h4>
+                   <p><%= instanceUser.acerca_de_mi%></p>
+                   
+                  </div>
+    
+                </div>
+              </div> 
+            </div>  
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="container m-3">
+                <h2 class="text-center">Datos personales</h2>
+
+
+          <div class="row mt-3" style="background-color: #FFFDCE">
+            <div class="col-4">
+              <div class="container m-3">
+                <p class="fw-bold">País: </p>
+                <%= instanceUser.pais%>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="container m-3">
+                <p class="fw-bold">Ciudad: </p>
+                <%= instanceUser.ciudad%>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="container m-3">
+                <p class="fw-bold">Edad:</p>
+                <%= instanceUser.edad%>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="container m-3">
+                <p class="fw-bold">Estudios universitarios:</p>
+                <%= instanceUser.estudios%>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="container m-3">
+                <p class="fw-bold">Idiomas:</p>
+                <%= instanceUser.idiomas%>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="container m-3">
+                <p class="fw-bold">Perfil LinkedIn:</p>
+                <%= instanceUser.linkedin%>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="container m-3">
+                <p class="fw-bold">Hobbies:</p>
+                <%= instanceUser.hobbies%>
+              </div>
+            </div>
+          </div>
+
+
+          </div>
+          </div>
+          </div>
+    
+          <div class="row">
+            <div class="col">
+              <div class="container m-3">
+                <h2 class="text-center">Características</h2>
+
+                <div class="row mt-3" style="background-color: rgb(234, 246, 253);">
+                  <div class="col-6">
+                    <div class="container m-3">
+                      <h3 class="text-center">Conocimientos</h3>
+                      <div class="row mt-3">
+                        <div class="col-4 fw-bold">
+                          Base de Datos
+                        </div>
+                        <div class="col-8">
+                          <%= instanceUser.base_datos%>
+                       </div>
+
+                       <div class="col-4 fw-bold">
+                        APIS
+                      </div>
+                      <div class="col-8">
+                        <%= instanceUser.apis%>
+                     </div>
+
+                     <div class="col-4 fw-bold">
+                      Testing
+                    </div>
+                    <div class="col-8">
+                      <%= instanceUser.testing%>
+                   </div>
+
+                   <div class="col-4 fw-bold">
+                    Seguridad
+                  </div>
+                  <div class="col-8">
+                    <%= instanceUser.seguridad%>
+                 </div>
+
+                 <div class="col-4 fw-bold">
+                  Teoría de Objetos
+                </div>
+                <div class="col-8">
+                  <%= instanceUser.teoria_objetos%>
+               </div>
+
+                      </div>
+                      
+                    </div>
+                  </div>
+                 
+
+
+
+
+
+
+                  <div class="col-6">
+                    <div class="container m-3">
+                      <h3 class="text-center">Tecnologías</h3>
+                      <div class="row mt-3">
+                        <div class="col-4 fw-bold">
+                          Nodejs
+                        </div>
+                        <div class="col-8">
+                          <%= instanceUser.nodejs%>  
+                       </div>
+
+                       <div class="col-4 fw-bold">
+                        Frontend
+                      </div>
+                      <div class="col-8">
+                        <%= instanceUser.frontend%>
+                     </div>
+
+                     <div class="col-4 fw-bold">
+                      Swagger
+                    </div>
+                    <div class="col-8">
+                      <%= instanceUser.swagger%>
+                   </div>
+
+                   <div class="col-4 fw-bold">
+                    Javascript
+                  </div>
+                  <div class="col-8">
+                    <%= instanceUser.javascript%>
+                 </div>
+
+                
+
+                      </div>
+                      
+                    </div>
+                  </div>
+                 
+
+
+
+
+
+
+
+                </div>  
+                
+                
+                <div class="row mt-3" style="background-color: rgb(234, 246, 253);">
+                  <div class="col-6">
+                    <div class="container m-3">
+                      <h3 class="text-center">Desempeño</h3>
+                      <div class="row mt-3">
+                        <div class="col-4 fw-bold">
+                          Calidad del código
+                        </div>
+                        <div class="col-8">
+                          <%= instanceUser.calidad_codigo%>
+                       </div>
+
+                       <div class="col-4 fw-bold">
+                        Velocidad de entrega
+                      </div>
+                      <div class="col-8">
+                        <%= instanceUser.velocidad_entrega%>
+                     </div>
+
+                     <div class="col-4 fw-bold">
+                      Performance
+                    </div>
+                    <div class="col-8">
+                      <%= instanceUser.performance_codigo%>
+                   </div>
+
+                  
+
+             
+
+                      </div>
+                      
+                    </div>
+                  </div>
+                 
+
+
+
+
+
+
+                  <div class="col-6">
+                    <div class="container m-3">
+                      <h3 class="text-center">Habilidades blandas</h3>
+                      <div class="row mt-3">
+                        <div class="col-4 fw-bold">
+                          Enfocado
+                        </div>
+                        <div class="col-8">
+                          <%= instanceUser.enfocado%>
+                       </div>
+
+                       <div class="col-4 fw-bold">
+                        Trabajo en equipo
+                      </div>
+                      <div class="col-8">
+                        <%= instanceUser.trabajo_equipo%> 
+                     </div>
+
+                     <div class="col-4 fw-bold">
+                      Comprometido
+                    </div>
+                    <div class="col-8">
+                      <%= instanceUser.comprometido%>
+                   </div>
+
+                   <div class="col-4 fw-bold">
+                    Comunicacion
+                  </div>
+                  <div class="col-8">
+                    <%= instanceUser.comunicacion%>
+                 </div>
+
+                 <div class="col-4 fw-bold">
+                  Capacidad de Aprendizaje
+                </div>
+                <div class="col-8">
+                  <%= instanceUser.capacidad_aprendizaje%>
+               </div>
+
+               <div class="col-4 fw-bold">
+                Resolucion de problemas
+              </div>
+              <div class="col-8">
+                <%= instanceUser.resolucion_problema%>
+             </div>
+
+                
+
+                      </div>
+                      
+                    </div>
+                  </div>
+                 
+
+
+
+
+
+
+
+                </div> 
+
+
+
+
+                <div class="row mt-3" style="background-color: rgb(234, 246, 253);">
+                  <div class="col-6">
+                    <div class="container m-3">
+                      <h3 class="text-center">Entornos Profesionales</h3>
+                      <div class="row mt-3">
+                        <div class="col-4 fw-bold">
+                          Versionado- Github
+                        </div>
+                        <div class="col-8">
+                          <%= instanceUser.versionado_git%> 
+                       </div>
+
+                       <div class="col-4 fw-bold">
+                        Trello-Jira
+                      </div>
+                      <div class="col-8">
+                        <%= instanceUser.trello%>
+                     </div>
+
+                     <div class="col-4 fw-bold">
+                      Slack
+                    </div>
+                    <div class="col-8">
+                      <%= instanceUser.slack%>
+                   </div>
+
+                   <div class="col-4 fw-bold">
+                    Métodologías agiles
+                  </div>
+                  <div class="col-8">
+                    <%= instanceUser.metodologias_agiles%>  
+                 </div>
+
+                 
+
+                      </div>
+                      
+                    </div>
+                  </div>
+                 
+
+
+
+
+
+
+                 
+
+
+
+
+
+
+
+                </div>  
+
+
+
+
+
+
+                <div class="row mt-3" style="background-color: rgb(234, 246, 253);">
+                  <div class="col-12">
+                    <div class="container m-3">
+                      <h3 class="text-center">Conocimientos Extras</h3>
+                      <div class="row mt-3">
+                        <div class="col-12">
+                          <%= instanceUser.conocimientos_extras%>
+                       </div>
+
+                 
+
+                      </div>
+                      
+                    </div>
+                  </div>
+                 
+
+
+
+
+
+
+                 
+
+
+
+
+
+
+
+                </div> 
+
+
+
+
+
+
+              </div>
+            </div>
+          </div>      
+        </div>
+    
+
+
+
+  </div>
+</div>
+  
+
+
+
+
+
+
+
+
+
+
+<!-- BOOTSTRAP 5 JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
